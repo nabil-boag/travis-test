@@ -4,7 +4,10 @@
   "description": "Travis test",
   "main": "index.js",
   "scripts": {
-    "test": "echo 1"
+    "install": "echo NOT installing"
+    "test": "echo NOW Testing",
+    "lint": "echo NOW Linting",
+    "deploy": "echo NOW Deploying",
   },
   "repository": {
     "type": "git",

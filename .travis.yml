@@ -1,10 +1,12 @@
 language: node_js
 node_js:
   - "8"
-
+before_install:
+  - npm install -g serverless
 jobs:
   include:
-    - stage: unit tests
+    - stage: tests
       script: npm run test
-    - stage: unit tests
-      script: echo two
+      script: npm run lint
+    - stage: deploy
+      script: npm run deploy
